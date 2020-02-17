@@ -6,10 +6,9 @@
  * Time: 11:18
  */
 
-require('interfaces/user.interface.php');
 
-class user implements userInterface
-{
+
+class user implements userInterface{
 
     private $request;
 
@@ -19,6 +18,14 @@ class user implements userInterface
     }
 
 
-
-
+    public function getRequest($request)
+    {
+        echo " getRequest impementé";
+        // TODO: Implement parseRequest() method.
+    }
+public function parseRequest()
+{
+    echo " parse Request impementé";
+    // TODO: Implement parseRequest() method.
+}
 }
